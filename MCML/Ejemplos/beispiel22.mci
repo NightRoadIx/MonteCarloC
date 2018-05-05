@@ -1,0 +1,30 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# beispiel22.mci
+# 	Una plantilla para ingresar los datos para MCML.
+#	Cualquier caracter siguiendo una # son ignorados (comentarios)
+#	Lineas de espacio tambien son ignoradas
+#	Las longitudes se toman en  cm, mua & mus estan en 1/cm.
+#
+#	Ejecuciones multiples pueden establecerse.
+#
+#   EN LAS DESCRIPCIONES EVITAR ACENTOS O CARACTERES FUERA DE ASCII
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+1.0                      	# version del archivo
+1                        	# numero de ejecuciones
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1 [biopsia]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+bipsoy01.mco 	A			# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.002	0.001	# dz, dr [cm]
+500	500	1		# Num. of dz, dr, da. (z = 1cm, r = 3cm, a = pi/2)
+
+3									# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1									# n para el medio superior
+1.30	0.800	100.0	0.8	0.02	# capa 1 parafina
+1.43	0.285	71.5	0.9	0.08	# capa 2 biopsia
+1.30	0.800	100.0	0.8	0.90	# capa 3 parafina
+1									# n para el medio debajo

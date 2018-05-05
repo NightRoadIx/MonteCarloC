@@ -1,0 +1,200 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# beispiel10.mci
+# 	Una plantilla para ingresar los datos para MCML.
+#	Cualquier caracter siguiendo una # son ignorados (comentarios)
+#	Lineas de espacio tambien son ignoradas
+#	Las longitudes se toman en [cm], mua & mus estan en [1/cm].
+#
+#	Ejecuciones multiples pueden establecerse.
+#
+#   EN LAS DESCRIPCIONES EVITAR ACENTOS O CARACTERES FUERA DE ASCII
+#
+#   
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+1.0                      	# version del archivo
+14                       	# numero de ejecuciones
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1 [phantom 1 index mismatch]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp01.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.1	0.1			          	# dz, dr [cm]
+100	100	8                	# Num. of dz, dr, da. (z = 10cm, r=10cm)
+
+1                        				# Numero de capas
+#n		mua		mus		g	d			# Una linea para las propieades de cada capa
+1                         				# n para el medio superior
+1.45	0.5		20.0	0.75	10.0    # capa 1
+1                 				       	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1a [phantom 1 index match] 
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp01a.mco A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.1	0.1			          	# dz, dr [cm]
+100	100	8                	# Num. of dz, dr, da. (z = 10cm, r=10cm)
+
+1.33                       				# Numero de capas
+#n		mua		mus		g	d			# Una linea para las propieades de cada capa
+1.33                         			# n para el medio superior
+1.45	0.5		20.0	0.75	10.0    # capa 1
+1.33      		                  		# n para el medio debajo
+
+
+#### DATOS ESPECIFICOS PARA EJECUCION 2 [phantom 2 index mismatch]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp02.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.1	0.1               		# dz, dr [cm]
+100	100	8                	# Num. of dz, dr, da. (z = 10cm, r=10cm, a=)
+
+1                        				# Numero de capas
+#n		mua		mus		g	d			# Una linea para las propieades de cada capa
+1                         				# n para el medio superior
+1.45	0.25	10.0	0.75	10.0    # capa 1
+1                        				# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 2a [phantom 2 index match]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp02a.mco 	A			# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.1	0.1               		# dz, dr [cm]
+100	100	8                	# Num. of dz, dr, da. (z = 10cm, r=10cm, a=)
+
+1.33                       				# Numero de capas
+#n		mua		mus		g	d			# Una linea para las propieades de cada capa
+1                         				# n para el medio superior
+1.45	0.25	10.0	0.75	10.0    # capa 1
+1.33                       				# n para el medio debajo
+
+
+#### DATOS ESPECIFICOS PARA EJECUCION 3 [phantom 3 index mismatch]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp03.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.1	0.1               		# dz, dr [cm]
+100	100	8                	# Num. of dz, dr, da. (z = 10cm, r=10cm, a=)
+
+1                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.45	0.125	5.0	0.75	10.0    # capa 1
+1                        			# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 3a [phantom 3 index match]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp03a.mco A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.1	0.1               		# dz, dr [cm]
+100	100	8                	# Num. of dz, dr, da. (z = 10cm, r=10cm, a=)
+
+1                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1.33                       			# n para el medio superior
+1.45	0.125	5.0	0.75	10.0    # capa 1
+1.33                       			# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 4 [phantom 4 index mismatch]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp04.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.1	0.1               		# dz, dr [cm]
+100	100	8                	# Num. of dz, dr, da. (z = 10cm, r=10cm, a=)
+
+1                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.45	0.1	4.0	0.75	10.0    # capa 1
+1                        			# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 4a [phantom 4 index match]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp04a.mco A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.1	0.1               		# dz, dr [cm]
+100	100	8                	# Num. of dz, dr, da. (z = 10cm, r=10cm, a=)
+
+1                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1.33                       			# n para el medio superior
+1.45	0.1	4.0	0.75	10.0    # capa 1
+1.33                       			# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 5 [phantom 5 index mismatch]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp05.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.1	0.1               		# dz, dr [cm]
+100	100	8                	# Num. of dz, dr, da. (z = 10cm, r=10cm, a=)
+
+1                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.45	0.96	5.3	0.75	10.0    # capa 1
+1                        			# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 5a [phantom 5 index match]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp05a.mco A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.1	0.1               		# dz, dr [cm]
+100	100	8                	# Num. of dz, dr, da. (z = 10cm, r=10cm, a=)
+
+1                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1.33                       			# n para el medio superior
+1.45	0.96	5.3	0.75	10.0    # capa 1
+1.33                       			# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 6 [phantom 6 index mismatch]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp06.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.1	0.1               		# dz, dr [cm]
+100	100	8                	# Num. of dz, dr, da. (z = 10cm, r=10cm, a=)
+
+1                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.45	0.01	10.0	0.75	10.0    # capa 1
+1                        			# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 6a [phantom 6 index match]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp06a.mco A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.1	0.1               		# dz, dr [cm]
+100	100	8                	# Num. of dz, dr, da. (z = 10cm, r=10cm, a=)
+
+1                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1.33                       			# n para el medio superior
+1.45	0.01	10.0	0.75	10.0    # capa 1
+1.33                       			# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 7 [phantom 7 index mismatch]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp07.mco A				# Nombre de archivo de salida, ASCII.
+100000                  	# Num. de fotones
+0.1	0.1               		# dz, dr [cm]
+100	100	10                	# Num. of dz, dr, da. (z = 10cm, r=10cm, a=)
+
+1                        				# Numero de capas
+#n		mua		mus		g	d			# Una linea para las propieades de cada capa
+1                         				# n para el medio superior
+1.45	0.1		4.0		0.75	10.0    # capa 1
+1                        				# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 7a [phantom 7 index match]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+xamp07a.mco A				# Nombre de archivo de salida, ASCII.
+100000                  	# Num. de fotones
+0.1	0.1               		# dz, dr [cm]
+100	100	10                	# Num. of dz, dr, da. (z = 10cm, r=10cm, a=)
+
+1                        				# Numero de capas
+#n		mua		mus		g	d			# Una linea para las propieades de cada capa
+1.33                       				# n para el medio superior
+1.45	0.1		4.0		0.75	10.0    # capa 1
+1.33                       				# n para el medio debajo

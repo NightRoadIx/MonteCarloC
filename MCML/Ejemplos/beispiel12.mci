@@ -1,0 +1,117 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# beispiel12.mci
+# 	Una plantilla para ingresar los datos para MCML.
+#	Cualquier caracter siguiendo una # son ignorados (comentarios)
+#	Lineas de espacio tambien son ignoradas
+#	Las longitudes se toman en [cm], mua & mus estan en [1/cm].
+#
+#	Ejecuciones multiples pueden establecerse.
+#
+#   EN LAS DESCRIPCIONES EVITAR ACENTOS O CARACTERES FUERA DE ASCII
+#
+#   Nombre de los archivos va asi: Simulacion-lambda
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+1.0                      	# version del archivo
+7                        	# numero de ejecuciones
+#############################################################################################
+
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1 []
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+s400.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.0005	0.01               	# dz, dr [cm]
+682	1000	1				# Num. of dz, dr, da.
+
+3                        				# Numero de capas
+#n		mua		mus		g		d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.47	4.2		156.3	0.812	0.002   # capa 2 Epidermis viva
+1.42	17.8	159.9	0.815	0.040  	# capa 3 Dermis Papilar
+1.38	2.4		94.73	0.810	0.300  	# capa 3 Dermis Papilar
+1.44         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 2 []
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+s450.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.0001	0.01               	# dz, dr [cm]
+420	1000	1				# Num. of dz, dr, da.
+
+2                        				# Numero de capas
+#n		mua		mus		g		d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.45	2.9		121.6	0.828	0.002   # capa 2 Epidermis viva
+1.44	5.6		124.1	0.815	0.040  	# capa 3 Dermis Papilar
+1.44         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 3 []
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+s500.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.0001	0.01               	# dz, dr [cm]
+420	1000	1				# Num. of dz, dr, da.
+
+2                        				# Numero de capas
+#n		mua		mus		g		d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.45	2.0		93.1	0.845	0.002   # capa 2 Epidermis viva
+1.40	1.5		92.24	0.815	0.040  	# capa 3 Dermis Papilar
+1.44         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 4 []
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+s550.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.0001	0.01               	# dz, dr [cm]
+420	1000	1				# Num. of dz, dr, da.
+
+2                        				# Numero de capas
+#n		mua		mus		g		d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.45	1.5		74.7	0.859	0.002   # capa 2 Epidermis viva
+1.37	3.38	77.22	0.815	0.040  	# capa 3 Dermis Papilar
+1.44         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 5 []
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+s600.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.0001	0.01               	# dz, dr [cm]
+420	1000	1				# Num. of dz, dr, da.
+
+2                        				# Numero de capas
+#n		mua		mus		g		d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.44	1.1		63.76	0.874	0.002   # capa 2 Epidermis viva
+1.38	0.56	63.09	0.815	0.040  	# capa 3 Dermis Papilar
+1.44         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 6 []
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+s650.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.0001	0.01               	# dz, dr [cm]
+420	1000	1				# Num. of dz, dr, da.
+
+2                        				# Numero de capas
+#n		mua		mus		g		d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.43	0.9		55.48 	0.887	0.002   # capa 2 Epidermis viva
+1.39	0.13	55.98	0.815	0.040  	# capa 3 Dermis Papilar
+1.44         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 7 []
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+s700.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.0001	0.01               	# dz, dr [cm]
+420	1000	1				# Num. of dz, dr, da.
+
+2                        				# Numero de capas
+#n		mua		mus		g		d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.43	0.7		54.66	0.904	0.002   # capa 2 Epidermis viva
+1.39	0.07	53.62	0.815	0.040  	# capa 3 Dermis Papilar
+1.44         			              	# n para el medio debajo

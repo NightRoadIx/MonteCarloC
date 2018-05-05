@@ -1,0 +1,568 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# beispiel5_caps.mci
+# 	Una plantilla para ingresar los datos para MCML.
+#	Cualquier caracter siguiendo una # son ignorados (comentarios)
+#	Lineas de espacio tambien son ignoradas
+#	Las longitudes se toman en [cm], mua & mus estan en [1/cm].
+#
+#	Ejecuciones multiples pueden establecerse.
+#
+#   EN LAS DESCRIPCIONES EVITAR ACENTOS O CARACTERES FUERA DE ASCII
+#
+#   Nombre de los archivos va asi: simulacion-Melanina(L,M,H)-Oxigenacion(o,d)-Grosorpiel(3,1,0)-Wavelength(660,940)
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+1.0                      	# version del archivo
+36                        	# numero de ejecuciones
+
+#############################################################################################
+# LIGHT MELANIN 3.8% (COMBINACIONES CON PIEL DELGADA, MEDIANA Y GRUESA Y OXIG-DEOX A 360 Y 940 NM)
+#############################################################################################
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1 [Haz colimado, Light melanin, oxigenado, piel delgada, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dLo3660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+134	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.47	5.086	262.273	0.81	0.002   # capa 1 Epidermis
+1.38	0.056	157.942	0.83	0.064  	# capa 2 Dermis 
+1.44	0.143	113.652	0.81	0.001  	# capa 3 Grasa subcutanea (Hipodermis)
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 2 [Haz colimado, Light melanin, deoxigenado, piel delgada, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dLd3660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+134	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	5.086	262.273	0.81	0.002   # capa 1 Epidermis
+1.38	0.088	157.942	0.82	0.064  	# capa 2 Dermis
+1.44	0.143	113.652	0.81	0.001  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 3 [Haz colimado, Light melanin, oxigenado, piel delgada, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dLo3940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+134	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	1.614	184.149	0.87	0.002   # capa 1 Epidermis
+1.38	0.196	106.456	0.88	0.064  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	0.001  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 4 [Haz colimado, Light melanin, deoxigenado, piel delgada, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dLd3940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+134	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	1.614	184.149	0.87	0.002   # capa 1 Epidermis viva
+1.38	0.186	108.143	0.88	0.064  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	0.001  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 5 [Haz colimado, Light melanin, oxigenado, piel median, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dLo1660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+3442	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.47	5.086	262.273	0.81	0.011   # capa 1 Epidermis
+1.38	0.056	157.942	0.83	0.210 	# capa 2 Dermis 
+1.44	0.143	113.652	0.81	1.500  	# capa 3 Grasa subcutanea (Hipodermis)
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 6 [Haz colimado, Light melanin, deoxigenado, piel median, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dLd1660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+3442	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	5.086	262.273	0.81	0.011   # capa 1 Epidermis
+1.38	0.088	157.942	0.82	0.210  	# capa 2 Dermis
+1.44	0.143	113.652	0.81	1.500  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 7 [Haz colimado, Light melanin, oxigenado, piel median, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dLo1940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+3442	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	1.614	184.149	0.87	0.011   # capa 1 Epidermis
+1.38	0.196	106.456	0.88	0.210  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	1.500  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 8 [Haz colimado, Light melanin, deoxigenado, piel median, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dLd1940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+3442	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	1.614	184.149	0.87	0.011   # capa 1 Epidermis viva
+1.38	0.186	108.143	0.88	0.210  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	1.500  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 9 [Haz colimado, Light melanin, oxigenado, piel gruesa, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dLo0660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+6654	1000	10				# Num. of dz, dr, da.
+
+3                       			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.47	5.086	262.273	0.81	0.012   # capa 1 Epidermis
+1.38	0.056	157.942	0.83	0.315  	# capa 2 Dermis 
+1.44	0.143	113.652	0.81	3.000  	# capa 3 Grasa subcutanea (Hipodermis)
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 10 [Haz colimado, Light melanin, deoxigenado, piel gruesa, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dLd0660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+6654	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	5.086	262.273	0.81	0.012   # capa 1 Epidermis
+1.38	0.088	157.942	0.82	0.315  	# capa 2 Dermis
+1.44	0.143	113.652	0.81	3.000  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 11 [Haz colimado, Light melanin, oxigenado, piel gruesa, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dLo0940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+6654	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	1.614	184.149	0.87	0.012   # capa 1 Epidermis
+1.38	0.196	106.456	0.88	0.315  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	3.000  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 12 [Haz colimado, Light melanin, deoxigenado, piel gruesa, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dLd0940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+6654	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	1.614	184.149	0.87	0.012   # capa 1 Epidermis viva
+1.38	0.186	108.143	0.88	0.315  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	3.000  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#############################################################################################
+# MEDIAN MELANIN 13.5% (COMBINACIONES CON PIEL DELGADA, MEDIANA Y GRUESA Y OXIG-DEOX A 360 Y 940 NM)
+#############################################################################################
+
+#### DATOS ESPECIFICOS PARA EJECUCION 13 [Haz colimado, Median melanin, oxigenado, piel delgada, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dMo3660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+134	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.47	17.797	262.273	0.81	0.002   # capa 1 Epidermis
+1.38	0.056	157.942	0.83	0.064  	# capa 2 Dermis 
+1.44	0.143	113.652	0.81	0.001  	# capa 3 Grasa subcutanea (Hipodermis)
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 14 [Haz colimado, Median melanin, deoxigenado, piel delgada, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dMd3660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+134	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	17.797	262.273	0.81	0.002   # capa 1 Epidermis
+1.38	0.088	157.942	0.82	0.064  	# capa 2 Dermis
+1.44	0.143	113.652	0.81	0.001  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 15 [Haz colimado, Median melanin, oxigenado, piel delgada, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dMo3940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+134	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	5.327	184.149	0.87	0.002   # capa 1 Epidermis
+1.38	0.196	106.456	0.88	0.064  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	0.001  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 16 [Haz colimado, Median melanin, deoxigenado, piel delgada, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dMd3940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+134	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	5.327	184.149	0.87	0.002   # capa 1 Epidermis viva
+1.38	0.186	108.143	0.88	0.064  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	0.001  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 17 [Haz colimado, Median melanin, oxigenado, piel median, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dMo1660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+3442	1000	10				# Num. of dz, dr, da.
+
+3                       			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.47	17.797	262.273	0.81	0.011   # capa 1 Epidermis
+1.38	0.056	157.942	0.83	0.210  	# capa 2 Dermis 
+1.44	0.143	113.652	0.81	1.500  	# capa 3 Grasa subcutanea (Hipodermis)
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 18 [Haz colimado, Median melanin, deoxigenado, piel median, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dMd1660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+3442	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	17.797	262.273	0.81	0.011   # capa 1 Epidermis
+1.38	0.088	157.942	0.82	0.210  	# capa 2 Dermis
+1.44	0.143	113.652	0.81	1.500  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 19 [Haz colimado, Median melanin, oxigenado, piel median, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dMo1940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+3442	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	5.327	184.149	0.87	0.011   # capa 1 Epidermis
+1.38	0.196	106.456	0.88	0.210  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	1.500  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 20 [Haz colimado, Median melanin, deoxigenado, piel median, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dMd1940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+3442	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	5.327	184.149	0.87	0.011   # capa 1 Epidermis viva
+1.38	0.186	108.143	0.88	0.210  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	1.500  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 21 [Haz colimado, Median melanin, oxigenado, piel gruesa, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dMo0660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+6654	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.47	17.797	262.273	0.81	0.012   # capa 1 Epidermis
+1.38	0.056	157.942	0.83	0.315  	# capa 2 Dermis 
+1.44	0.143	113.652	0.81	3.000  	# capa 3 Grasa subcutanea (Hipodermis)
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 22 [Haz colimado, Median melanin, deoxigenado, piel gruesa, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dMd0660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+6654	1000	10				# Num. of dz, dr, da.
+
+3                       			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	17.797	262.273	0.81	0.012   # capa 1 Epidermis
+1.38	0.088	157.942	0.82	0.315  	# capa 2 Dermis
+1.44	0.143	113.652	0.81	3.000  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 23 [Haz colimado, Median melanin, oxigenado, piel gruesa, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dMo0940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+6654	1000	10				# Num. of dz, dr, da.
+
+3                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	5.327	184.149	0.87	0.012   # capa 1 Epidermis
+1.38	0.196	106.456	0.88	0.315  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	3.000  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 24 [Haz colimado, Median melanin, deoxigenado, piel gruesa, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dMd0940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+6654	1000	10				# Num. of dz, dr, da.
+
+3                       			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	5.327	184.149	0.87	0.012   # capa 1 Epidermis viva
+1.38	0.186	108.143	0.88	0.315  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	3.000  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#############################################################################################
+# HIGH MELANIN 30.5% (COMBINACIONES CON PIEL DELGADA, MEDIANA Y GRUESA Y OXIG-DEOX A 360 Y 940 NM)
+#############################################################################################
+
+#### DATOS ESPECIFICOS PARA EJECUCION 25 [Haz colimado, High melanin, oxigenado, piel delgada, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dHo3660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+134	1000	10				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.47	40.074	262.273	0.81	0.002   # capa 1 Epidermis
+1.38	0.056	157.942	0.83	0.064  	# capa 2 Dermis 
+1.44	0.143	113.652	0.81	0.001  	# capa 3 Grasa subcutanea (Hipodermis)
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 26 [Haz colimado, High melanin, deoxigenado, piel delgada, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dHd3660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+134	1000	10				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	40.074	262.273	0.81	0.002   # capa 1 Epidermis
+1.38	0.088	157.942	0.82	0.064  	# capa 2 Dermis
+1.44	0.143	113.652	0.81	0.001  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 27 [Haz colimado, High melanin, oxigenado, piel delgada, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dHo3940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+134	1000	10				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	11.834	184.149	0.87	0.002   # capa 1 Epidermis
+1.38	0.196	106.456	0.88	0.064  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	0.001  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 28 [Haz colimado, High melanin, deoxigenado, piel delgada, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dHd3940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+134	1000	10				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	11.834	184.149	0.87	0.002   # capa 1 Epidermis viva
+1.38	0.186	108.143	0.88	0.064  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	0.001  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 29 [Haz colimado, High melanin, oxigenado, piel median, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dHo1660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+3442	1000	10				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.47	40.074	262.273	0.81	0.011   # capa 1 Epidermis
+1.38	0.056	157.942	0.83	0.210  	# capa 2 Dermis 
+1.44	0.143	113.652	0.81	1.500  	# capa 3 Grasa subcutanea (Hipodermis)
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 30 [Haz colimado, High melanin, deoxigenado, piel median, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dHd1660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+3442	1000	10				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	40.074	262.273	0.81	0.011   # capa 1 Epidermis
+1.38	0.088	157.942	0.82	0.210  	# capa 2 Dermis
+1.44	0.143	113.652	0.81	1.500  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 31 [Haz colimado, High melanin, oxigenado, piel median, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dHo1940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+3442	1000	10				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	11.834	184.149	0.87	0.011   # capa 1 Epidermis
+1.38	0.196	106.456	0.88	0.210  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	1.500  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 32 [Haz colimado, High melanin, deoxigenado, piel median, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dHd1940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+3442	1000	10				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	11.834	184.149	0.87	0.011   # capa 1 Epidermis viva
+1.38	0.186	108.143	0.88	0.210  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	1.500  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 33 [Haz colimado, High melanin, oxigenado, piel gruesa, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dHo0660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+6654	1000	10				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.47	40.074	262.273	0.81	0.012   # capa 1 Epidermis
+1.38	0.056	157.942	0.83	0.315  	# capa 2 Dermis 
+1.44	0.143	113.652	0.81	3.000  	# capa 3 Grasa subcutanea (Hipodermis)
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 34 [Haz colimado, High melanin, deoxigenado, piel gruesa, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dHd0660.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+6654	1000	10				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	40.074	262.273	0.81	0.012   # capa 1 Epidermis
+1.38	0.088	157.942	0.82	0.315  	# capa 2 Dermis
+1.44	0.143	113.652	0.81	3.000  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 35 [Haz colimado, High melanin, oxigenado, piel gruesa, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dHo0940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+6654	1000	10				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	11.834	184.149	0.87	0.012   # capa 1 Epidermis
+1.38	0.196	106.456	0.88	0.315  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	3.000  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 36 [Haz colimado, High melanin, deoxigenado, piel gruesa, 940 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+dHd0940.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               	# dz, dr [cm]
+6654	1000	10				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.47	11.834	184.149	0.87	0.012   # capa 1 Epidermis viva
+1.38	0.186	108.143	0.88	0.315  	# capa 2 Dermis
+1.44	0.152	79.798	0.87	3.000  	# capa 3 Grasa subcutanea
+1.37                        	# n para el medio debajo

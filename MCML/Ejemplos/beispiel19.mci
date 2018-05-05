@@ -1,0 +1,42 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# beispiel19.mci
+# 	Una plantilla para ingresar los datos para MCML.
+#	Cualquier caracter siguiendo una # son ignorados (comentarios)
+#	Lineas de espacio tambien son ignoradas
+#	Las longitudes se toman en [cm], mua & mus estan en [1/cm].
+#
+#	Ejecuciones multiples pueden establecerse.
+#
+#   EN LAS DESCRIPCIONES EVITAR ACENTOS O CARACTERES FUERA DE ASCII
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+1.0                      	# version del archivo
+1                        	# numero de ejecuciones
+
+
+#############################################################################################
+# MODELO DIRECTO DEL INFIERNO
+#############################################################################################
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1 [Haz colimado, Light melanin, oxigenado, piel delgada, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+europa3.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.001	0.001               # dz, dr [cm]
+5000	5000	10				# Num. of dz, dr, da.
+
+10                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1.00                       	  			# n para el medio superior
+1.55	0.15	262.273	0.71	0.02	# capa 1 
+1.40	1.022	252.265	0.71	0.10	# capa 2 
+1.40	5.022	192.453	0.71	0.16  	# capa 3 
+1.38	0.050	124.306	0.84	0.20  	# capa 4 
+1.35	0.048	120.881	0.84	0.16  	# capa 5 
+1.38	0.005	81.306	0.90	0.80  	# capa 6 
+1.39	0.025	60.306	0.90	1.20  	# capa 7 
+1.43	0.065	10.306	0.83	1.40  	# capa 8 
+1.49	0.405	184.306	0.97	0.90  	# capa 9 
+1.55	13.005	224.306	0.71	0.06  	# capa 10 
+1.00         			              	# n para el medio debajo

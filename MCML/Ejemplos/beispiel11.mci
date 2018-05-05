@@ -1,0 +1,205 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# beispiel11.mci
+# 	Una plantilla para ingresar los datos para MCML.
+#	Cualquier caracter siguiendo una # son ignorados (comentarios)
+#	Lineas de espacio tambien son ignoradas
+#	Las longitudes se toman en [cm], mua & mus estan en [1/cm].
+#
+#	Ejecuciones multiples pueden establecerse.
+#
+#   EN LAS DESCRIPCIONES EVITAR ACENTOS O CARACTERES FUERA DE ASCII
+#
+#   Nombre de los archivos va asi: simulacion-Melanina(L,M,H)-Oxigenacion(o,d)-Grosorpiel(3,1,0)-Wavelength(630)-SpO2
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+1.0                      	# version del archivo
+9                        	# numero de ejecuciones
+
+#############################################################################################
+#############################################################################################
+# SATURACIÓN DE OXÍGENO 95%
+#############################################################################################
+#############################################################################################
+
+#############################################################################################
+# LIGHT MELANIN 3.8% (COMBINACIONES CON PIEL DELGADA, MEDIANA Y GRUESA Y OXIG-DEOX A 630 NM)
+#############################################################################################
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1 [Haz colimado, Light melanin, oxigenado, piel delgada, 630 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+cLo363095.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.01               	# dz, dr [cm]
+134	1000	1				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.55	0.15	262.273	0.81	0.001   # capa 1 Estrato corneo
+1.40	10.052	262.273	0.81	0.001   # capa 2 Epidermis viva
+1.40	10.052	262.273	0.81	0.004  	# capa 3 Dermis Papilar
+1.38	0.060	124.306	0.84	0.010  	# capa 4 Dermis plexo sanguineo superior
+1.35	0.058	120.881	0.84	0.040  	# capa 5 Dermis Reticular
+1.38	0.060	124.306	0.84	0.010  	# capa 6 Dermis plexo sanguineo inferior
+1.44	0.143	113.652	0.81	0.001  	# capa 7 Grasa subcutanea
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 2 [Haz colimado, Light melanin, oxigenado, piel median, 630 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+cLo163095.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.01               	# dz, dr [cm]
+1632	1000	1				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.55	0.15	262.273	0.81	0.001   # capa 1 Estrato corneo
+1.40	10.052	262.273	0.81	0.005   # capa 2 Epidermis viva
+1.40	10.052	262.273	0.81	0.010  	# capa 3 Dermis Papilar
+1.38	0.060	124.306	0.84	0.030  	# capa 4 Dermis plexo sanguineo superior
+1.35	0.058	120.881	0.84	0.150  	# capa 5 Dermis Reticular
+1.38	0.060	124.306	0.84	0.020  	# capa 6 Dermis plexo sanguineo inferior
+1.44	0.143	113.652	0.81	0.6  	# capa 7 Grasa subcutanea
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 3 [Haz colimado, Light melanin, oxigenado, piel gruesa, 630 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+cLo063095.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.01               	# dz, dr [cm]
+2654	1000	1				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.55	0.15	262.273	0.81	0.002   # capa 1 Estrato corneo
+1.40	10.052	262.273	0.81	0.010   # capa 2 Epidermis viva
+1.40	10.052	262.273	0.81	0.015  	# capa 3 Dermis Papilar
+1.38	0.060	124.306	0.84	0.050  	# capa 4 Dermis plexo sanguineo superior
+1.35	0.058	120.881	0.84	0.210  	# capa 5 Dermis Reticular
+1.38	0.060	124.306	0.84	0.040  	# capa 6 Dermis plexo sanguineo inferior
+1.44	0.143	113.652	0.81	1.000  	# capa 7 Grasa subcutanea
+1.37         			              	# n para el medio debajo
+
+#############################################################################################
+# MEDIAN MELANIN 13.5% (COMBINACIONES CON PIEL DELGADA, MEDIANA Y GRUESA Y OXIG A 660 NM)
+#############################################################################################
+
+#### DATOS ESPECIFICOS PARA EJECUCION 4 [Haz colimado, Median melanin, oxigenado, piel delgada, 630 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+cMo363095.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.01               	# dz, dr [cm]
+134	1000	1				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.55	0.15	262.273	0.81	0.001   # capa 1 Estrato corneo
+1.40	41.544	262.273	0.81	0.001   # capa 2 Epidermis viva
+1.40	41.544	262.273	0.81	0.004  	# capa 3 Dermis Papilar
+1.38	0.060	124.306	0.84	0.010  	# capa 4 Dermis plexo sanguineo superior
+1.35	0.058	120.881	0.84	0.040  	# capa 5 Dermis Reticular
+1.38	0.060	124.306	0.84	0.010  	# capa 6 Dermis plexo sanguineo inferior
+1.44	0.143	113.652	0.81	0.001  	# capa 7 Grasa subcutanea
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 5 [Haz colimado, Median melanin, oxigenado, piel median, 630 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+cMo163095.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.01               	# dz, dr [cm]
+1632	1000	1				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.55	0.15	262.273	0.81	0.001   # capa 1 Estrato corneo
+1.40	41.544	262.273	0.81	0.005   # capa 2 Epidermis viva
+1.40	41.544	262.273	0.81	0.010  	# capa 3 Dermis Papilar
+1.38	0.060	124.306	0.84	0.030  	# capa 4 Dermis plexo sanguineo superior
+1.35	0.058	120.881	0.84	0.150  	# capa 5 Dermis Reticular
+1.38	0.060	124.306	0.84	0.020  	# capa 6 Dermis plexo sanguineo inferior
+1.44	0.143	113.652	0.81	0.6  	# capa 7 Grasa subcutanea
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 6 [Haz colimado, Median melanin, oxigenado, piel gruesa, 630 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+cMo063095.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.01               	# dz, dr [cm]
+2654	1000	1				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.55	0.15	262.273	0.81	0.002   # capa 1 Estrato corneo
+1.40	41.544	262.273	0.81	0.010   # capa 2 Epidermis viva
+1.40	41.544	262.273	0.81	0.015  	# capa 3 Dermis Papilar
+1.38	0.060	124.306	0.84	0.050  	# capa 4 Dermis plexo sanguineo superior
+1.35	0.058	120.881	0.84	0.210  	# capa 5 Dermis Reticular
+1.38	0.060	124.306	0.84	0.040  	# capa 6 Dermis plexo sanguineo inferior
+1.44	0.143	113.652	0.81	1.000  	# capa 7 Grasa subcutanea
+1.37         			              	# n para el medio debajo
+
+#############################################################################################
+# HIGH MELANIN 30.5% (COMBINACIONES CON PIEL DELGADA, MEDIANA Y GRUESA Y OXIG A 630 NM)
+#############################################################################################
+
+#### DATOS ESPECIFICOS PARA EJECUCION 7 [Haz colimado, High melanin, oxigenado, piel delgada, 630 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+cHo363095.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.01               	# dz, dr [cm]
+134	1000	1				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.55	0.15	262.273	0.81	0.001   # capa 1 Estrato corneo
+1.40	86.798	262.273	0.81	0.001   # capa 2 Epidermis viva
+1.40	86.798	262.273	0.81	0.004  	# capa 3 Dermis Papilar
+1.38	0.060	124.306	0.84	0.010  	# capa 4 Dermis plexo sanguineo superior
+1.35	0.058	120.881	0.84	0.040  	# capa 5 Dermis Reticular
+1.38	0.060	124.306	0.84	0.010  	# capa 6 Dermis plexo sanguineo inferior
+1.44	0.143	113.652	0.81	0.001  	# capa 7 Grasa subcutanea
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 8 [Haz colimado, High melanin, oxigenado, piel median, 630 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+cHo163095.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.01               	# dz, dr [cm]
+1632	1000	1				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.55	0.15	262.273	0.81	0.001   # capa 1 Estrato corneo
+1.40	86.798	262.273	0.81	0.005   # capa 2 Epidermis viva
+1.40	86.798	262.273	0.81	0.010  	# capa 3 Dermis Papilar
+1.38	0.060	124.306	0.84	0.030  	# capa 4 Dermis plexo sanguineo superior
+1.35	0.058	120.881	0.84	0.150  	# capa 5 Dermis Reticular
+1.38	0.060	124.306	0.84	0.020  	# capa 6 Dermis plexo sanguineo inferior
+1.44	0.143	113.652	0.81	0.6  	# capa 7 Grasa subcutanea
+1.37         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 9 [Haz colimado, High melanin, oxigenado, piel gruesa, 630 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+cHo063095.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.01               	# dz, dr [cm]
+2654	1000	1				# Num. of dz, dr, da.
+
+7                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.55	0.15	262.273	0.81	0.002   # capa 1 Estrato corneo
+1.40	86.798	262.273	0.81	0.010   # capa 2 Epidermis viva
+1.40	86.798	262.273	0.81	0.015  	# capa 3 Dermis Papilar
+1.38	0.060	124.306	0.84	0.050  	# capa 4 Dermis plexo sanguineo superior
+1.35	0.058	120.881	0.84	0.210  	# capa 5 Dermis Reticular
+1.38	0.060	124.306	0.84	0.040  	# capa 6 Dermis plexo sanguineo inferior
+1.44	0.143	113.652	0.81	1.000  	# capa 7 Grasa subcutanea
+1.37         			              	# n para el medio debajo

@@ -1,0 +1,37 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# beispiel6.mci
+# 	Una plantilla para ingresar los datos para MCML.
+#	Cualquier caracter siguiendo una # son ignorados (comentarios)
+#	Lineas de espacio tambien son ignoradas
+#	Las longitudes se toman en [cm], mua & mus estan en [1/cm].
+#
+#	Ejecuciones multiples pueden establecerse.
+#
+#   EN LAS DESCRIPCIONES EVITAR ACENTOS O CARACTERES FUERA DE ASCII
+#
+#   Nombre de los archivos va asi: simulacion-Melanina(L,M,H)-Oxigenacion(o,d)-Grosorpiel(3,1,0)-Wavelength(660,940)
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+1.0                      	# version del archivo
+1                        	# numero de ejecuciones
+
+#### DATOS ESPECIFICOS PARA EJECUCION 0 [Haz colimado, Light melanin, oxigenado, piel median, 660 nm, con musculo y hueso]
+#InParm                    			# Parametros de entrada. Se utilizan cm.
+chava.mco 	A           			# Nombre de archivo de salida, ASCII.
+10000000                  			# Num. de fotones
+0.0005	0.001               		# dz, dr [cm]
+7442	6000	10						# Num. of dz, dr, da.
+
+9                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.55	0.15	262.273	0.81	0.001   # capa 1 Estrato corneo
+1.40	10.022	262.273	0.81	0.010   # capa 2 Epidermis viva
+1.40	10.022	262.273	0.81	0.010  	# capa 3 Dermis Papilar
+1.38	0.061	124.306	0.84	0.030  	# capa 4 Dermis plexo sanguineo superior
+1.35	0.057	120.881	0.84	0.150  	# capa 5 Dermis Reticular
+1.38	0.061	124.306	0.84	0.020  	# capa 6 Dermis plexo sanguineo inferior
+1.44	0.143	113.652	0.81	1.000  	# capa 7 Grasa subcutanea
+1.37	1.23	52.588	0.83	1.500	# capa 8 Musculo
+1.64	0.4		350.0	0.93	1.000	# capa 9 Hueso
+1.37         			              	# n para el medio debajo

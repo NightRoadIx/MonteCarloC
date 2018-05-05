@@ -1,0 +1,70 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# beispiel12.mci
+# 	Una plantilla para ingresar los datos para MCML.
+#	Cualquier caracter siguiendo una # son ignorados (comentarios)
+#	Lineas de espacio tambien son ignoradas
+#	Las longitudes se toman en [cm], mua & mus estan en [1/cm].
+#
+#	Ejecuciones multiples pueden establecerse.
+#
+#   EN LAS DESCRIPCIONES EVITAR ACENTOS O CARACTERES FUERA DE ASCII
+#
+#   Nombre de los archivos va asi: Simulacion-lambda
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+1.0                      	# version del archivo
+4                        	# numero de ejecuciones
+#############################################################################################
+
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1 []
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+h365.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.001	0.01               	# dz, dr [cm]
+100	500	1				# Num. of dz, dr, da.
+
+1                        				# Numero de capas
+#n		mua		mus		g		d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.51	60.0	230.0	0.90	0.100   # capa 1
+1.44         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 2 []
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+h400.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.001	0.01               	# dz, dr [cm]
+100	500	1				# Num. of dz, dr, da.
+
+1                        				# Numero de capas
+#n		mua		mus		g		d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.47	47.0	180.0	0.91	0.100   # capa 1
+1.44         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 3 []
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+h488.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.001	0.01               	# dz, dr [cm]
+100	500	1				# Num. of dz, dr, da.
+
+1                        				# Numero de capas
+#n		mua		mus		g		d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.44	12.2	173.5	0.93	0.100   # capa 1
+1.44         			              	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 4 []
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+h633.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.001	0.01               	# dz, dr [cm]
+100	500	1				# Num. of dz, dr, da.
+
+1                        				# Numero de capas
+#n		mua		mus		g		d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.41	6.50	143.7	0.95	0.100   # capa 1
+1.44         			              	# n para el medio debajo

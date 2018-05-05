@@ -1,0 +1,30 @@
+##########################################
+# beispiel2.mci
+# 	Una plantilla para ingresar los datos para MCML.
+#	Cualquier caracter siguiendo una # son ignorados (comentarios)
+#	Lineas de espacio tambien son ignoradas
+#	Las longitudes se toman en  cm, mua & mus estan en 1/cm.
+#
+#	Ejecuciones multiples pueden establecerse.
+##########################################
+
+1.0                      	# version del archivo
+1                        	# numero de ejecuciones
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1 [Modelo Reuss piel PO Hb]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+pulsox.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.002	0.01               	# dz, dr [cm]
+600	300	1                	# Num. of dz, dr, da.
+
+6                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propiedades de cada capa
+1                         			# n para el medio superior
+1.3		0.285	71.5	0.8	0.02    # capa 1 epidermis
+1.37	0.285	71.5	0.8	0.02   	# capa 2 dermis
+1.3		1.24	71.5	0.8	0.02  	# capa 3 plexo papilar
+1.3		1.00	71.5	0.8	0.08  	# capa 4 dermis
+1.3		3.78	71.5	0.8	0.06  	# capa 5 plexo cutaneo
+1.3		1.00	71.5	0.8	1.00  	# capa 6 hipodermis
+1                        	# n para el medio debajo

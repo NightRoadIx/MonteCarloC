@@ -1,0 +1,99 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# beispiel21.mci
+# 	Una plantilla para ingresar los datos para MCML.
+#	Cualquier caracter siguiendo una # son ignorados (comentarios)
+#	Lineas de espacio tambien son ignoradas
+#	Las longitudes se toman en  cm, mua & mus estan en 1/cm.
+#
+#	Ejecuciones multiples pueden establecerse.
+#
+#   EN LAS DESCRIPCIONES EVITAR ACENTOS O CARACTERES FUERA DE ASCII
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+1.0                      	# version del archivo
+16                        	# numero de ejecuciones
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1 [phantom 1 index mismatch]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+waret01.mco 	A			# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.01	0.01				# dz, dr [cm]
+500	500	8					
+# Num. of dz, dr, da. (z = 5cm, r=5cm)
+
+1                        				# Numero de capas
+#n		mua		mus		g	d			# Una linea para las propieades de cada capa
+1                         				# n para el medio superior
+1.45	2.5		100.0	0.85	5.0		# capa 1
+1                 				       	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 2 [phantom 2 index mismatch]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+waret02.mco 	A			# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.01	0.01				# dz, dr [cm]
+500	500	8					
+# Num. of dz, dr, da. (z = 5cm, r=5cm)
+
+1                        				# Numero de capas
+#n		mua		mus		g	d			# Una linea para las propieades de cada capa
+1                         				# n para el medio superior
+1.46	1.8		150.0	0.86	5.0		# capa 1
+1                 				       	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 3 [phantom 3 index mismatch]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+waret03.mco 	A			# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.01	0.01				# dz, dr [cm]
+500	500	8					
+# Num. of dz, dr, da. (z = 5cm, r=5cm)
+
+1                        				# Numero de capas
+#n		mua		mus		g	d			# Una linea para las propieades de cada capa
+1                         				# n para el medio superior
+1.46	1.65	186.0	0.89	5.0		# capa 1
+1                 				       	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 4 [phantom 4 index mismatch]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+waret04.mco 	A			# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.01	0.01				# dz, dr [cm]
+500	500	8					
+# Num. of dz, dr, da. (z = 5cm, r=5cm)
+
+1                        				# Numero de capas
+#n		mua		mus		g	d			# Una linea para las propieades de cada capa
+1                         				# n para el medio superior
+1.47	1.32	215.0	0.91	5.0		# capa 1
+1                 				       	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 5 [phantom 5 index mismatch]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+waret05.mco 	A			# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.01	0.01				# dz, dr [cm]
+500	500	8					
+# Num. of dz, dr, da. (z = 5cm, r=5cm)
+
+1                        				# Numero de capas
+#n		mua		mus		g	d			# Una linea para las propieades de cada capa
+1                         				# n para el medio superior
+1.50	1.12	220.0	0.90	5.0		# capa 1
+1                 				       	# n para el medio debajo
+
+#### DATOS ESPECIFICOS PARA EJECUCION 6 [phantom 6 index mismatch]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+waret06.mco 	A			# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.01	0.01				# dz, dr [cm]
+500	500	8					
+# Num. of dz, dr, da. (z = 5cm, r=5cm)
+
+1                        				# Numero de capas
+#n		mua		mus		g	d			# Una linea para las propieades de cada capa
+1                         				# n para el medio superior
+1.45	0.93	200.0	0.80	5.0		# capa 1
+1                 				       	# n para el medio debajo

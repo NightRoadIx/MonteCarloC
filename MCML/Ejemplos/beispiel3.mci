@@ -1,0 +1,30 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# beispiel3.mci
+# 	Una plantilla para ingresar los datos para MCML.
+#	Cualquier caracter siguiendo una # son ignorados (comentarios)
+#	Lineas de espacio tambien son ignoradas
+#	Las longitudes se toman en  cm, mua & mus estan en 1/cm.
+#
+#	Ejecuciones multiples pueden establecerse.
+#
+#   EN LAS DESCRIPCIONES EVITAR ACENTOS O CARACTERES FUERA DE ASCII
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+1.0                      	# version del archivo
+1                        	# numero de ejecuciones
+
+#### DATOS ESPECIFICOS PARA EJECUCION 13 [Modelo esofago normal @630 nm]
+#InParm						# Parametros de entrada. Se utilizan cm.
+xamp13.mco 	A				# Nombre de archivo de salida, ASCII.
+1000000                  	# Num. de fotones
+0.005	0.01               	# dz, dr [cm]
+200	500	1               	# Num. of dz, dr, da.
+
+3                       			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                         			# n para el medio superior
+1.34	0.68	254.0	0.950	0.155   # capa 1 capa de la mucosa
+1.40	1.09	122.0	0.941	0.200  	# capa 2 capa del musculo
+1.44	1.00	669.0	0.770	1.000  	# capa 3 capa del tejido adiposo
+1.37                        	# n para el medio debajo

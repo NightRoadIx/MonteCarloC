@@ -1,0 +1,110 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# beispiel18.mci
+# 	Una plantilla para ingresar los datos para MCML.
+#	Cualquier caracter siguiendo una # son ignorados (comentarios)
+#	Lineas de espacio tambien son ignoradas
+#	Las longitudes se toman en [cm], mua & mus estan en [1/cm].
+#
+#	Ejecuciones multiples pueden establecerse.
+#
+#   EN LAS DESCRIPCIONES EVITAR ACENTOS O CARACTERES FUERA DE ASCII
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+1.0                      	# version del archivo
+4                        	# numero de ejecuciones
+
+
+#############################################################################################
+# MODELO DE REUSS PARA 660 NM
+#############################################################################################
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1 [Haz colimado, Light melanin, oxigenado, piel delgada, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+roiss.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0005	0.001               # dz, dr [cm]
+2000	1000	10				# Num. of dz, dr, da.
+
+6                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.55	0.15	262.273	0.71	0.02	# capa 1 Epidermis
+1.40	10.022	252.265	0.71	0.02	# capa 2 Dermis (no perfundida)
+1.40	15.022	192.453	0.71	0.02  	# capa 3 Papillary nexus
+1.38	0.050	124.306	0.84	0.08  	# capa 4 Dermis (perfundida)
+1.35	0.048	120.881	0.84	0.06  	# capa 5 Cutaneous plexus
+1.38	0.005	224.306	0.90	0.80  	# capa 6 Hypodermis
+1.37         			              	# n para el medio debajo
+
+#############################################################################################
+# CALAMAR VAMPIRO DEL INFIERNO!!!!!
+#############################################################################################
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1 [Haz colimado, Light melanin, oxigenado, piel delgada, 660 nm]
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+vmpth.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.001	0.001               # dz, dr [cm]
+5000	5000	10				# Num. of dz, dr, da.
+
+6                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior
+1.55	20.15	62.273	0.71	0.02	# capa 1 Epidermis
+1.40	10.022	252.265	0.78	0.04	# capa 2 Dermis (no perfundida)
+1.40	1.022	234.453	0.71	0.04  	# capa 3 Papillary nexus
+1.38	0.050	124.306	0.84	0.10  	# capa 4 Dermis (perfundida)
+1.35	0.048	120.881	0.86	0.20  	# capa 5 Cutaneous plexus
+1.68	0.005	112.306	0.90	0.10  	# capa 6 Hypodermis
+1.55	0.005	324.306	0.94	0.25  	# capa 7 Hypodermis
+1.38	0.003	224.306	0.91	0.10  	# capa 8 Hypodermis
+1.38	0.002	24.306	0.90	0.10  	# capa 9 Hypodermis
+1.45	0.001	54.306	0.90	0.05  	# capa 10 Hypodermis
+1.15         			              	# n para el medio debajo
+
+#############################################################################################
+# Modelo Zeng et al @442 nm
+#############################################################################################
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1 
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+zeng442.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0001	0.001               # dz, dr [cm]
+2000	5000	10				# Num. of dz, dr, da.
+
+6                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior aire
+1.45	190.0	2300.0	0.90	0.001	# capa 1 Stratum corneum
+1.40	56.00	570.00	0.75	0.008	# capa 2 Epidermis
+1.40	6.700	700.00	0.75	0.010  	# capa 3 Papillary nexus
+1.39	67.00	680.00	0.77	0.008  	# capa 4 Dermis (perfundida)
+1.40	6.700	700.00	0.75	0.150  	# capa 5 Cutaneous plexus
+1.34	541.0	520.00	0.96	0.007  	# capa 6 Hypodermis
+1.40	6.700	700.00	0.75	0.016  	# capa 7 Hypodermis
+1.46         			              	# n para la hipodermis
+
+#############################################################################################
+# Modelo Zeng et al @520 nm
+#############################################################################################
+
+#### DATOS ESPECIFICOS PARA EJECUCION 1
+#InParm                    	# Parametros de entrada. Se utilizan cm.
+zeng520.mco 	A           # Nombre de archivo de salida, ASCII.
+10000000                  	# Num. de fotones
+0.0001	0.001               # dz, dr [cm]
+2000	5000	10				# Num. of dz, dr, da.
+
+6                        			# Numero de capas
+#n		mua		mus		g	d		# Una linea para las propieades de cada capa
+1                       	  			# n para el medio superior aire
+1.45	150.0	1300.0	0.90	0.001	# capa 1 Stratum corneum
+1.40	40.00	570.00	0.77	0.008	# capa 2 Epidermis
+1.40	5.000	500.00	0.77	0.010  	# capa 3 Papillary nexus
+1.39	24.50	500.00	0.79	0.008  	# capa 4 Dermis (perfundida)
+1.40	5.000	500.00	0.77	0.150  	# capa 5 Cutaneous plexus
+1.34	181.0	500.00	0.96	0.007  	# capa 6 Hypodermis
+1.40	5.000	500.00	0.77	0.016  	# capa 7 Hypodermis
+1.46         			              	# n para la hipodermis
