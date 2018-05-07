@@ -1,0 +1,2 @@
+Ejecutar el programa lookmcml en Matlab
+O en su defecto la función getmcml con el nombre del archivo generado por la simulación MCOUT*.DAT
